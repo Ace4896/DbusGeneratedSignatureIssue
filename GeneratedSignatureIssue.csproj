@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="org.freedesktop.secrets.xml" DBusGeneratorMode="Proxy" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tmds.DBus.Protocol" Version="0.15.0" />
+    <PackageReference Include="Tmds.DBus.SourceGenerator" Version="0.0.11" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
